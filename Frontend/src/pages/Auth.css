@@ -1,0 +1,91 @@
+/* frontend/src/pages/Auth.css */
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f1eb; 
+}
+
+.auth-container {
+  background-color: #ffffff;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 8px M30px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 2.5rem;
+  color: #4a4a4a;
+  /* FONT CHANGE: Use the elegant Lora font for headings */
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 1.25rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  /* FONT CHANGE: Ensure input fields use Montserrat */
+  font-family: 'Montserrat', sans-serif;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.auth-container input::placeholder {
+  color: #aaa;
+}
+
+.auth-container input:focus {
+  outline: none;
+  /* COLOR CHANGE: Use sage green for the focus glow */
+  border-color: #52796F; 
+  box-shadow: 0 0 8px rgba(82, 121, 111, 0.2);
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  /* COLOR CHANGE: New sage green button color */
+  background-color: #52796F; 
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth-container button:hover {
+  /* COLOR CHANGE: A darker green for hover */
+  background-color: #3B574F; 
+  transform: translateY(-2px);
+}
+
+.auth-link {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.auth-link a {
+  /* COLOR CHANGE: Link color now matches the sage green button */
+  color: #52796F; 
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.auth-link a:hover {
+  /* COLOR CHANGE: Darker green for link hover */
+  color: #3B574F; 
+}
